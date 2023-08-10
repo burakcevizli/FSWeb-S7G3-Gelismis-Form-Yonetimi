@@ -4,7 +4,7 @@ describe("Ödev TEST", () => {
     });
 
     it("Name Check", () => {
-        cy.get("#name").type("Burak").should("have.value", "Burak")
+        cy.get("[data-cy=isimformu]").type("Burak").should("have.value", "Burak")
     });
     it("Email Check", () => {
         cy.get('#email').type("burakcevizli@gmail.com").should("have.value", "burakcevizli@gmail.com")

@@ -85,6 +85,7 @@ const Form1 = () => {
             type="text"
             id="name"
             name="name"
+            data-cy="isimformu"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
