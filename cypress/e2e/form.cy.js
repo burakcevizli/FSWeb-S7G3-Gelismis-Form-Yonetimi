@@ -22,6 +22,6 @@ describe("Ödev TEST", () => {
         cy.get('#terms').check()
     })
     it("Buton Check", () => {
-        cy.get('.btn').click()
+        cy.get('.btn').click().should("have.value","click")
     })
 })
